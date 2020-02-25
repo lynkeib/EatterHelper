@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LandingPage</title>
+    <link href='https://fonts.googleapis.com/css?family=Lekton|Lobster' rel='stylesheet' type='text/css'>
+    <link href="../static/dist/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../static/dist/jquery.mb.YTPlayer.js"></script>
+
+    <script>
+$(function(){
+$(".ytp_player").YTPlayer();
+});
+
+
+    </script>
+
+</head>
+<body>
+
+<div class="ytp_player"
+
+     data-property="{videoURL:'http://youtu.be/BsekcY04xvQ',containment:'body', showControls:false, autoPlay:true, loop:true, mute:true, startAt:40, opacity:1, quality:'default'}">
+
+</div>
+<div style="position:absolute !important;
+    height:100% !important;
+    width: 60% !important;
+    margin-left: 20% !important;
+    margin-right:20% !important;
+    padding-left: 1% !important;
+padding-right:1% !important;">
+        <div style="height:50%">
+            <div style="position:relative !important;
+            width:100% !important;
+            min-height: 1px !important;
+            height:224px !important;
+            text-align: center !important;
+display: block !important; margin-top:45vh !important;">
+                <h style="display: block; font-size:62px; font-weight:300;color: #FFF;"> Welcome!</h>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
