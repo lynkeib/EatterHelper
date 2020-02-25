@@ -12,3 +12,4 @@ Here we used Yelp API to find the businesses located near the location user inpu
     * Framework: Django
     * Database: TBD
 
+this is the first change
