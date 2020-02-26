@@ -20,5 +20,5 @@ from .views import landing
 urlpatterns = [
     path(r'admin/', admin.site.urls),
     path(r"search/", include("apis.urls")),
-    path(r"", landing.LandingView.as_view()),
+    path(r"", landing.LandingView.as_view(), name="landing"),
 ]

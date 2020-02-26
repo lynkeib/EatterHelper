@@ -14,25 +14,20 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../static/dist/jquery.mb.YTPlayer.js"></script>
+    <!--    <script src="../static/js/landing.js"></script>-->
 
     <script>
     $(function(){
-        $(".ytp_player").YTPlayer();
-    });
-
-
-
-
-
+        $(".ytp_player").YTPlayer();});
     </script>
 
 </head>
-<section style="background-color:rgba(0, 0, 0, .5);height:100%;position:absolute;width:100%;">
-    <body>
 
-    <div class="ytp_player"
+<body>
+<div id="curtain"></div>
+<div class="ytp_player"
 
-         data-property="{videoURL:'https://www.youtube.com/watch?v=vN5l9h5D8Ns',
+     data-property="{videoURL:'https://www.youtube.com/watch?v=vN5l9h5D8Ns',
      containment:'body',
      showControls:false,
      autoPlay:true,
@@ -42,17 +37,17 @@
      opacity:1,
      quality:'hd1080'}">
 
+
+</div>
+
+<div class="container text-center" id="c-welcome">
+    <h1 id="welcome"> Welcome!</h1>
+    <div style="margin-top:50px;">
+        <a class="btn btn-success" href="{% url 'yelpapi' %}">Start your journey</a>
     </div>
-
-    <div class="container text-center" id="c-welcome">
-        <h1 id="welcome"> Welcome!</h1>
-        <div style="margin-top:50px;">
-            <a class="btn btn-success" href="{% url 'yelpapi' %}">Start your journey</a>
-        </div>
-    </div>
+</div>
 
 
-    </body>
-</section>
+</body>
 
 </html>

@@ -1,3 +1,7 @@
+body {
+    background-color:black !important;
+}
+
 .container {
     margin-top: 20vh;
 }
@@ -15,4 +19,12 @@
     align-items:center;
     justify-content:center;
     flex-direction:column;
+}
+
+#curtain {
+    background-color:rgba(0,0,0,.3);
+    position:fixed;
+    top:0px;
+    min-height:100%;
+    min-width:100%;
 }
