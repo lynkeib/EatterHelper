@@ -1,49 +1,58 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LandingPage</title>
-    <link href='https://fonts.googleapis.com/css?family=Lekton|Lobster' rel='stylesheet' type='text/css'>
-    <link href="../static/dist/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lekton|Lobster' rel='stylesheet' type='text/css'/>
+    <link href="../static/dist/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="../static/css/landing.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../static/dist/jquery.mb.YTPlayer.js"></script>
 
     <script>
-$(function(){
-$(".ytp_player").YTPlayer();
-});
+    $(function(){
+        $(".ytp_player").YTPlayer();
+    });
+
+
+
 
 
     </script>
 
 </head>
-<body>
+<section style="background-color:rgba(0, 0, 0, .5);height:100%;position:absolute;width:100%;">
+    <body>
 
-<div class="ytp_player"
+    <div class="ytp_player"
 
-     data-property="{videoURL:'http://youtu.be/BsekcY04xvQ',containment:'body', showControls:false, autoPlay:true, loop:true, mute:true, startAt:40, opacity:1, quality:'default'}">
+         data-property="{videoURL:'https://www.youtube.com/watch?v=vN5l9h5D8Ns',
+     containment:'body',
+     showControls:false,
+     autoPlay:true,
+     loop:true,
+     mute:true,
+     startAt:40,
+     opacity:1,
+     quality:'hd1080'}">
 
-</div>
-<div style="position:absolute !important;
-    height:100% !important;
-    width: 60% !important;
-    margin-left: 20% !important;
-    margin-right:20% !important;
-    padding-left: 1% !important;
-padding-right:1% !important;">
-        <div style="height:50%">
-            <div style="position:relative !important;
-            width:100% !important;
-            min-height: 1px !important;
-            height:224px !important;
-            text-align: center !important;
-display: block !important; margin-top:45vh !important;">
-                <h style="display: block; font-size:62px; font-weight:300;color: #FFF;"> Welcome!</h>
-            </div>
+    </div>
+
+    <div class="container text-center" id="c-welcome">
+        <h1 id="welcome"> Welcome!</h1>
+        <div style="margin-top:50px;">
+            <a class="btn btn-success" href="{% url 'yelpapi' %}">Start your journey</a>
         </div>
     </div>
-</body>
+
+
+    </body>
+</section>
 
 </html>
