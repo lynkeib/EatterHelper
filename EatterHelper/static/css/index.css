@@ -66,3 +66,7 @@
 .no-cssanimations .slideshow li {
 	opacity: 1;
 }
+
+#userinput {
+  margin-top:30vh;
+}
