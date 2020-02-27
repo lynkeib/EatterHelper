@@ -1,5 +1,7 @@
+{% load static %}
 {% include "partials/header.html" %}
 
+<div id="curtain"></div>
 <div class="container" style="margin-top:30px;">
     <form class="text-center" method="POST" action="{% url 'yelpapi' %}">
         <h2>Input</h2>
@@ -13,6 +15,13 @@
             <input type="submit"/>
         </div>
     </form>
+    <ul class="slideshow">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
 </div>
 
 {% include "partials/footer.html" %}
