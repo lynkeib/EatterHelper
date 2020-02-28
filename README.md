@@ -10,5 +10,5 @@ Here we used Yelp API to find the businesses located near the location user inpu
 + Backend
     * Language: Python
     * Framework: Django
-    * Database: TBD
+    * Database: SQLite
 
