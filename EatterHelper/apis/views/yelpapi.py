@@ -21,7 +21,8 @@ from urllib.parse import urlencode
 
 class IndexView(View):
     def get(self, request):
-        return render(request, "index.html")
+        print("request from indexr", request.session.keys())
+        return render(request, "index.html", context={"loggedin": False})
 
     def post(self, request):
         name = request.POST.get("name", "")
