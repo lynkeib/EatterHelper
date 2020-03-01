@@ -43,7 +43,7 @@
             <li><a class="nav-item nav-link" href="{% url 'login' %}"> Login</a></li>
             <li><a class="nav-item nav-link" href="{% url 'signup' %}"> Signup</a></li>
             {% else %}
-            <li><a class="nav-item nav-link" href="#"> Logout</a></li>
+            <li><a class="nav-item nav-link" href="{% url 'logout' %}"> Logout</a></li>
             {% endif %}
         </ul>
 

@@ -22,5 +22,6 @@ urlpatterns = [
     path(r"search/", include("apis.urls")),
     path(r"", landing.LandingView.as_view(), name="landing"),
     path(r"login/", Login.LoginView.as_view(), name='login'),
-    path(r"signup/", signup.Signup.as_view(), name='signup')
+    path(r"signup/", signup.Signup.as_view(), name='signup'),
+    path(r"logout/", Login.Logout.as_view(), name="logout")
 ]

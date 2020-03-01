@@ -17,7 +17,17 @@ class LoginView(View):
             else:
                 print("password if not correct")
             print("user is", user)
+            request.session['loggedin'] = True
+            return render(request, "index.html", context={"loggedin": True})
         except:
             print("user do not exit")
             return redirect("/")
-        return redirect("/")
+
+
+class Logout(View):
+    def get(self, request):
+        request.session["loggedin"] = False
+        return render(request, "index.html", context={"loggedin": False})
+
+    def post(self, request):
+        pass
