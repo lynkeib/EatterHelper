@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import View
+from users.models import User
 
 
 class Signup(View):
